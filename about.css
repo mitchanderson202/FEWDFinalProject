@@ -1,0 +1,164 @@
+html {
+    background-color: #202020;
+}
+
+body {
+    font-size: 1.2em;
+    font-family: helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: .1% 5%;
+    background: #ffffff;
+    margin: 1vh 1vh 0;
+    position: sticky; 
+    top: 0;
+    z-index: 1;
+}
+
+.logo {
+    margin-right: auto;
+    object-fit: cover;
+    height: 10vh;
+    width: 14vw;
+}
+
+.navBar {
+    list-style: none;
+}
+    
+.navBar li {
+    display: inline-block;
+    padding: 1.4% 5vh;
+    border-radius: 50px;
+    background: #202020;
+}
+    
+.navBar a li {
+    color: #ffdf6c;
+    text-decoration: none;
+}
+    
+.contactBtn {
+    border-radius: 50px;
+    border: 2px solid #202020;
+    margin-left: 3vh;
+    padding: .4% 5vh;
+    background-color: #ffdf6c;
+    color: #202020;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+main {
+    color: #ffffff;
+    margin: 1vh 1vh 0;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    flex-wrap: wrap;    
+}
+
+
+.card1, .card2, .card3, .card4, .card5, .card6 {
+    width: 25vw;
+    height: 40vh;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease; 
+    margin: 3vh;
+}
+
+.card1:hover, .card2:hover, .card3:hover, .card4:hover, .card5:hover, .card6:hover {
+    transform: rotateY(180deg);
+}
+
+
+.pic1, .pic2, .pic3, .pic4, .pic5, .pic6 {
+    width: 25vw;
+    height: 25vh;
+    backface-visibility: hidden;
+    background-size: 25vh;
+    background-size: 25vw;      
+}
+
+.pic1 {
+    background-image: url('./images/image1.jpg');
+    object-fit: cover; 
+}
+
+.pic2 {
+    background-image: url('./images/image2.jpg');
+    object-fit: cover; 
+}
+
+.pic3 {
+    background-image: url('./images/image3.jpg');
+    object-fit: cover; 
+}
+
+.pic4 {
+    background-image: url('./images/image4.jpg');
+    object-fit: cover; 
+}
+
+.pic5 {
+    background-image: url('./images/image5.jpg');
+    object-fit: cover; 
+}
+
+.pic6 {
+    background-image: url('./images/image6.jpg');
+    object-fit: cover; 
+}
+
+.card1 figure, .card2 figure, .card3 figure, .card4 figure, .card5 figure, .card6 figure {
+    position: absolute;
+    margin: 0;
+}
+
+
+.pic1Back, .pic2Back, .pic3Back, .pic4Back, .pic5Back, .pic6Back {
+    width: 25vw;
+    height: 25vh;
+    backface-visibility: hidden;
+    background: black;
+    color: red;
+    font-size: 2em;
+    transform: rotateY(180deg);
+    text-align: center;
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1vh 1vh 0;
+    background: #ffffff;
+}
+    
+h6 {
+    color: #202020;
+    margin-right: auto;
+    height: 1vh;
+    font-size: 0.8rem;
+}
+    
+h6 a {
+    text-decoration: none;
+    color: #202020;
+}
+    
+footer img {
+    object-fit: cover;
+    height: 6vh;
+    width: 6vh;
+}
+
+footer a {
+    padding: 0% 2%;
+}
